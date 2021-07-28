@@ -40,6 +40,10 @@ i {
   margin-left: 4rem;
 }
 
+i:hover {
+  transform: scale(1.2);
+}
+
 .collection .collection-section {
   position: relative;
   width: 100%;
@@ -162,6 +166,14 @@ i {
   width: 200px;
   height: 200px;
   opacity: 0;
+}
+
+.collection input:checked ~ .collection-section > .toggle-content {
+  visibility: visible;
+}
+
+.collection input:checked ~ .toggle-content > .content-inside {
+  transform: scale(1);
 }
 
 @media (max-width: 900px) {
