@@ -166,12 +166,8 @@ i:hover {
   opacity: 0;
 }
 
-.collection input:checked ~ .collection-section > .toggle-content {
+.collection .collection-section .toggle-content #togglec {
   visibility: visible;
-}
-
-.collection input:checked ~ .toggle-content > .content-inside {
-  transform: scale(1);
 }
 
 @media (max-width: 900px) {
