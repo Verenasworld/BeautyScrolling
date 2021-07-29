@@ -31,8 +31,6 @@ header {
   overflow: none;
   width: 100%;
   height: 100vh;
-  scroll-snap-type: y mandatory;
-  scroll-snap-points-y: repeat(100vh);
 }
 
 i {
@@ -48,7 +46,7 @@ i:hover {
   position: relative;
   width: 100%;
   height: 100%;
-  scroll-snap-type: start;
+
   background-blend-mode: multiply;
 }
 
@@ -168,16 +166,24 @@ i:hover {
   opacity: 0;
 }
 
-.collection input:checked ~ .collection-section > .toggle-content {
+.collection .collection-section .toggle-content #togglec {
   visibility: visible;
 }
 
-.collection input:checked ~ .toggle-content > .content-inside {
-  transform: scale(1);
+@media (max-width: 900px) {
+  .collection {
+    height: 50vh;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .collection .collection-section .content {
+    top: 25%;
+  }
 }
 
-@media (max-width: 900px) {
-  .collection .collection-section .content::after {
-    display: none;
+@media (max-width: 1450px) {
+  .collection .collection-section .content {
+    width: 100%;
   }
 }
