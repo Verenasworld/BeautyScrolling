@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>popup learning</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container" id="black" class="togg">
+      <div class="content">
+        <h2>Lorem ipsum</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+          deleniti, consectetur commodi id maxime fugit.
+        </p>
+        <a href="#" onclick="toggle()">Read more</a>
+      </div>
+    </div>
+
+    <div class="popup" id="popup">
+      <a href="#" onclick="toggle()">X</a>
+      <h2>Lorem ipsum dolor sit,</h2>
+      <h2>Lorem ipsum dolor sit,</h2>
+      <h2>Lorem ipsum dolor sit,</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi,
+        optio itaque vitae eos necessitatibus possimus.
+      </p>
+    </div>
+
+    <script type="text/javascript">
+      function toggle() {
+        var black = document.getElementById("black");
+        black.classList.toggle("active");
+        var popup = document.getElementById("popup");
+        popup.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

@@ -20,6 +20,15 @@ h1 {
   font-size: 3rem;
 }
 
+.togglebutton {
+  position: absolute;
+  bottom: -120px;
+  right: 0;
+
+  z-index: 999;
+  width: 200px;
+  height: 200px;
+}
 header {
   color: #f29f8d;
   z-index: 1;
@@ -48,6 +57,13 @@ i:hover {
   height: 100%;
 
   background-blend-mode: multiply;
+}
+
+.collection-section#black.active {
+  filter: blur(20px);
+}
+.collection-section#black1.active {
+  filter: blur(20px);
 }
 
 .collection .collection-section:nth-child(1) {
@@ -166,7 +182,12 @@ i:hover {
   opacity: 0;
 }
 
-.collection .collection-section .toggle-content #togglec {
+.collection .collection-section .toggle-content #popup {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   visibility: visible;
 }
 
