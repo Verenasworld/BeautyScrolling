@@ -144,6 +144,30 @@
 }
 
 .menu-wrap .menu > div > div > ul > li > a:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
+}
+
+@media (max-width: 900px) {
+  .menu-wrap .hamburger {
+    width: 40px;
+    height: 40px;
+    padding: 0.8rem;
+  }
+
+  .menu-wrap .hamburger > div:before,
+  .menu-wrap .hamburger > div:after {
+    top: -15px;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+  }
+
+  .menu-wrap .hamburger > div:after {
+    top: 15px;
+  }
+
+  .menu-wrap .menu > div > div > ul > li a {
+    font-size: 1.2rem;
+  }
 }
