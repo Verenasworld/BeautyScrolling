@@ -39,10 +39,17 @@
             <div>
               <ul>
                 <li>
-                  <a href="#home">Home</a>
-                  <a href="#about">About</a>
-                  <a href="#shop">shop</a>
-                  <a href="#blog">blog</a>
+                 
+                  <a href="#soup" ><img src="img/soap-5145058_1920.jpg" alt=""/><a> 
+                    
+                   <a href="#nail"><img src="img/manicure-870857_1280.jpg" alt=""/></a>
+                  <a href="#shadow"><img src="img/eye-shadow-186756_1920.jpg" alt=""/></a>
+                  <a href="#mascara"><img src="img/makeup-64172_1280.jpg" alt=""/> </a>
+                  <a href="#lipstick"><img src="img/lipstick-1137538_1920.jpg" alt=""/></a>
+                  <a href="#makeup"><img src="img/eye-shadow-4558443_1920.jpg" alt=""/> </a>
+                  <a href="#parfum"><img src="img/perfume-3275950_1920.jpg" alt=""/></a>
+                  
+               
                 </li>
               </ul>
             </div>
@@ -51,66 +58,47 @@
       </div>
     </header>
 
+
+
+
+
     <div class="collection">
       <div class="collection-section" id="black">
         <div class="content">
-          <h1>Bio<br />Soup's</h1>
+          <h1 id="soup">Bio<br />Soup's</h1>
+          <i class="ri-shopping-bag-line">
+            <a class="togglebutton" href="#soup" onclick="toggle()"></a>
+          </i>
+          <i class="ri-magic-line" id="nav-close"></i>
+          <i class="ri-heart-line"></i>
           <div class="togglebutton">
-            <a href="#soup" onclick="toggle()">Read more</a>
+            <a href="#soup" onclick="toggle()">more</a>
           </div>
         </div>
 
         <div class="toggle-content" id="popup">
           <div class="content-inside">
             <a href="#soup" onclick="toggle()">X</a>
-            <h2>here is the toggle content going on !!! this is soooo coool</h2>
+            <h2>Soup Shop</h2>
             <div class="container">
               <div class="container-item">
                 <div class="container-content">
                   <img src="img/soap-5145058_1920.jpg" alt="" />
-                  <div class="overlay">
-                    <div class="title">Halloooo</div>
-                  </div>
+                  <h3>Best Soap ever</h3>
+                  <p>25€</p>
+                 
+                  <i class="ri-shopping-bag-line"></i>
+          <i class="ri-magic-line" id="nav-close"></i>
+          <i class="ri-heart-line"></i>
+                 
+                  
                 </div>
-              </div>
-              <div class="container-item">
-                <div class="container-content">
-                  <img src="img/soap-5145058_1920.jpg" alt="" />
-                  <div class="overlay">
-                    <div class="title">Halloooo</div>
-                  </div>
+                
                 </div>
-              </div>
-              <div class="container-item">
-                <div class="container-content">
-                  <img src="img/soap-5145058_1920.jpg" alt="" />
-                  <div class="overlay">
-                    <div class="title">Halloooo</div>
-                  </div>
+
+
                 </div>
-              </div>
-              <div class="container-item">
-                <div class="container-content">
-                  <img src="img/soap-5145058_1920.jpg" alt="" />
-                  <div class="overlay">
-                    <div class="title">Halloooo</div>
-                  </div>
                 </div>
-              </div>
-              <div class="container-item">
-                <div class="container-content">
-                  <img src="img/soap-5145058_1920.jpg" alt="" />
-                  <div class="overlay">
-                    <div class="title">Halloooo</div>
-                  </div>
-                </div>
-              </div>
-              <div class="container-item">
-                <div class="container-content">
-                  <img src="img/soap-5145058_1920.jpg" alt="" />
-                  <div class="overlay">
-                    <div class="title">Halloooo</div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -120,9 +108,12 @@
 
       <div class="collection-section" id="black1">
         <div class="content">
-          <h1>Nail <br />Polish</h1>
+          <h1 id="nail">Nail <br />Polish</h1>
+          <i class="ri-shopping-bag-line"></i>
+          <i class="ri-magic-line" id="nav-close"></i>
+          <i class="ri-heart-line"></i>
           <div class="togglebutton">
-            <a href="#nail" onclick="toggle1()">Read more</a>
+            <a href="#nail" onclick="toggle1()">more</a>
           </div>
         </div>
         <div class="toggle-content" id="popup1">
@@ -153,7 +144,7 @@
 
       <div class="collection-section">
         <div class="content">
-          <h1>Trend <br />Shadow</h1>
+          <h1 id="shadow">Trend <br />Shadow</h1>
           <i class="ri-shopping-bag-line"></i>
           <i class="ri-magic-line"></i>
           <i class="ri-heart-line"></i>
@@ -162,7 +153,7 @@
 
       <div class="collection-section">
         <div class="content">
-          <h1>Volumen<br />Mascara</h1>
+          <h1 id="mascara">Volumen<br />Mascara</h1>
           <i class="ri-shopping-bag-line"></i>
           <i class="ri-magic-line" id="nav-close"></i>
           <i class="ri-heart-line"></i>
@@ -171,7 +162,7 @@
 
       <div class="collection-section">
         <div class="content">
-          <h1>Lipstick<br />Love</h1>
+          <h1 id="lipstick">Lipstick<br />Love</h1>
           <i class="ri-shopping-bag-line"></i>
           <i class="ri-magic-line" id="nav-close"></i>
           <i class="ri-heart-line"></i>
@@ -180,7 +171,7 @@
 
       <div class="collection-section">
         <div class="content">
-          <h1>Make <br />Up</h1>
+          <h1 id="makeup">Make <br />Up</h1>
           <i class="ri-shopping-bag-line"></i>
           <i class="ri-magic-line" id="nav-close"></i>
           <i class="ri-heart-line"></i>
@@ -189,7 +180,7 @@
 
       <div class="collection-section">
         <div class="content">
-          <h1>
+          <h1 id="parfum">
             Parfum <br />
             Dream
           </h1>

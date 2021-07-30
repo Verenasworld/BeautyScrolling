@@ -25,7 +25,7 @@ h1 {
   bottom: -120px;
   right: 0;
 
-  width: 200px;
+  width: 100px;
   height: 200px;
 }
 header {
@@ -104,11 +104,10 @@ i:hover {
 .collection .collection-section .content {
   display: flex;
   justify-content: center;
-
   flex-wrap: wrap;
   position: absolute;
-  top: 50%;
-  width: 50%;
+  top: 0%;
+  width: 100%;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 1px 0 #ffffff;
@@ -163,9 +162,17 @@ i:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
-  text-align: center;
   height: 100%;
+  margin-top: 200px;
+}
+.collection .collection-section .toggle-content .content-inside a {
+  font-size: 4rem;
+  list-style: none;
+  text-decoration: none;
+}
+.collection .collection-section .toggle-content .content-inside a:hover {
+  transform: rotate(180deg);
+  transition: 1s linear;
 }
 
 .collection .collection-section .content input {
@@ -210,24 +217,25 @@ i:hover {
 
 .toggle-content .content-inside .container {
   display: flex;
+  overflow: hidden;
   flex-direction: row;
   flex-wrap: wrap;
 }
 .toggle-content .content-inside .container .container-item {
   margin: 20px;
   justify-content: center;
+  align-items: center;
   flex-grow: 1;
   flex-shrink: 1;
   transition: 0.5s ease;
 }
 
-.toggle-content .content-inside .container .container-item:hover {
+.toggle-content .content-inside .container .container-item img:hover {
+  transition: ease-in-out 0.7s;
   transform: scale(1.1);
 }
+
 @media (max-width: 900px) {
-  .collection {
-    height: 50vh;
-  }
   h1 {
     font-size: 2rem;
   }
