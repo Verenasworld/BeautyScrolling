@@ -129,6 +129,7 @@ i:hover {
   width: 5%;
   height: 500%;
   background-color: rgba(255, 255, 255, 0.8);
+  border-right: rgba(255, 255, 255, 0.1) 20px ridge;
 
   backdrop-filter: blur(5px);
 
@@ -212,6 +213,7 @@ i:hover {
 
 .toggle-content .content-inside .container {
   display: flex;
+  overflow: hidden;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -223,13 +225,10 @@ i:hover {
   transition: 0.5s ease;
 }
 
-.toggle-content .content-inside .container .container-item:hover {
+.toggle-content .content-inside .container .container-item img:hover {
   transform: scale(1.1);
 }
 @media (max-width: 900px) {
-  .collection {
-    height: 50vh;
-  }
   h1 {
     font-size: 2rem;
   }
