@@ -107,13 +107,13 @@
 }
 
 .menu-wrap .menu > div {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(30px);
-  border-radius: 50%;
+
   width: 200vw;
   height: 200vw;
   display: flex;
-  flex: none;
+
   align-items: center;
   justify-content: center;
   transform: scale(0);
@@ -121,19 +121,40 @@
 
 .menu-wrap .menu > div > div {
   text-align: center;
-  max-width: 90vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
   max-height: 100vh;
   transition: opacity 0.8s ease;
+
+  margin: 10px;
 }
 
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
-  display: flex;
-  flex-direction: column;
+
   font-size: 1.5rem;
-  padding: 5rem;
+  padding: 3rem;
 
   text-transform: uppercase;
+}
+
+.menu-wrap .menu > div > div > ul > li > a > span .tooltip {
+  visibility: hidden;
+}
+.menu-wrap .menu > div > div > ul > li > a img {
+  width: 300px;
+  height: 200px;
+  opacity: 0.8;
+  margin: 10px;
+}
+.menu-wrap .menu > div > div > ul > li > a img:hover {
+  box-shadow: 3px 5px 25px white;
+  transform: scale(1.1);
+  transition: all 1s;
+  opacity: 1;
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
@@ -143,9 +164,23 @@
   transition: opacity 0.5s ease-in;
 }
 
-.menu-wrap .menu > div > div > ul > li > a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+.menu-wrap
+  .menu
+  > div
+  > div
+  > ul
+  > li
+  > a
+  img:hover
+  .menu-wrap
+  .menu
+  > div
+  > div
+  > ul
+  > li
+  > a:hover {
+  transition: all 1.5s;
+  transform: translate(-33px, 0px);
 }
 
 @media (max-width: 900px) {

@@ -163,9 +163,11 @@ i:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
+
   text-align: center;
   height: 100%;
+
+  padding-top: 3rem;
 }
 
 .collection .collection-section .content input {
